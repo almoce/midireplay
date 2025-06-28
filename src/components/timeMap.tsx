@@ -1,11 +1,18 @@
 import { useKeyHistory } from "@/store"
 import { useEffect, useRef } from "react"
 import midinote from "@/utils/midinote"
+// import { useTimer } from "@/store"
+
 export default function TimeMap() {
 	const svgRef = useRef<SVGSVGElement>(null)
 	const history = useKeyHistory(state => state.history)
 	const vW = 500
 	const vH = 200
+
+
+	// const getProgress = useTimer(state => state.getProgress)
+	// const timmerLine = useRef<SVGElement>(null)
+
 	function init() {
 		const svg = svgRef.current as SVGElement
 		const keyMap = new Map()
@@ -66,6 +73,7 @@ export default function TimeMap() {
 					d+= `L ${p} ${y} `
 				}
 			})
+
 			
 			path.setAttribute('d', d)
 			path.setAttribute('fill', 'none')
@@ -74,17 +82,43 @@ export default function TimeMap() {
 			svg.append(text, path)
 		}
 
+		// const l = document.createElementNS("http://www.w3.org/2000/svg", "path")
+		// l.setAttribute('d', `M 0 0 V ${vH}`)
+		// l.setAttribute('fill', 'none')
+		// l.setAttribute('stroke', 'red')
+		// l.setAttribute('stroke-width', '0.5')
+
+		// timmerLine.current = l
+		// svg.append(l)
+
+
+		// return showTimeFrame()
 	}
 
+
+	// function showTimeFrame() {
+	// 	return requestAnimationFrame(() => {
+	// 		const now = getProgress() 
+	// 		const x = now * (vW - 20) + 20
+
+	// 		timmerLine?.current?.setAttribute('d', `M ${x || 0} 0 V ${vH}`)
+	// 		timmerLine?.current?.setAttribute('opacity', now ? '1' : '0')
+	// 		showTimeFrame()
+	// 	})
+	// }
+
 	useEffect(() => {
-		init()
+		const ani = init()
+		
 		return () => {
 			if (svgRef.current) {
 				const svg = svgRef.current
 				while (svg.firstChild) {
 				  svg.removeChild(svg.firstChild);
 				}
-			}	
+			}
+
+			// cancelAnimationFrame(ani)
 		}
 	}, [svgRef, history])
 

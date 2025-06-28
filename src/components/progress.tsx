@@ -28,6 +28,8 @@ export default function Progress({ref}: {ref: React.Ref<REF_ACTION>}) {
 	}, [history])
 
 	function start(endcallback: () => void = defaultEmptyHandler) {
+		cancelAnimationFrame(requestFrameRef.current)
+		
 		const alltimes = history.map(i => i.time)
 		const lastFrameTime = Math.max(...alltimes)
 		 

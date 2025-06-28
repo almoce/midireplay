@@ -249,6 +249,7 @@ function App() {
 					<Configuration />
 
 					<div className="flex flex-row gap-2 justify-center">
+						{/*<Button onClick={doReplay}>Rec&Play</Button>*/}
 						<Button onClick={doReplay}>Replay</Button>
 						<Button onClick={doClearn} variant="destructive">
 							Clear
