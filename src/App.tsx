@@ -44,12 +44,13 @@ function App() {
 	const activeMidiKeyRef = useRef<ACTIVE_MIDI_KEY_REF_ACTION>(null);
 
 	async function init() {
-		await device.init();
-		updateStateName();
 		if (!history.length) {
 			const demo = await fetch('./demo.json').then(r => r.json())
 			replaceHistory(demo.history)
 		}
+		
+		await device.init();
+		updateStateName();
 	}
 
 	function updateStateName() {
