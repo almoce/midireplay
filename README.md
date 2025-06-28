@@ -1,4 +1,4 @@
-# Midi Repaly
+# Midi Replay
 
 <img src="https://almoce.github.io/midireplay/midi.svg" width="100">
 
