@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="409px" height="156px" viewBox="0 0 409 156" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="App-Store" transform="translate(-52, -178)">
+            <g id="Group" transform="translate(52, 178)">
+                <rect id="0" stroke="#000000" stroke-width="5" fill="#FFFFFF" x="2.5" y="2.5" width="58.6766467" height="151"></rect>
+                <rect id="2" stroke="#000000" stroke-width="5" fill="#FFFFFF" x="60.0538922" y="2.5" width="58.6766467" height="151"></rect>
+                <rect id="4" stroke="#000000" stroke-width="5" fill="#FFFFFF" x="117.607784" y="2.5" width="58.6766467" height="151"></rect>
+                <rect id="5" stroke="#000000" stroke-width="5" fill="#FFFFFF" x="175.161677" y="2.5" width="58.6766467" height="151"></rect>
+                <rect id="7" stroke="#000000" stroke-width="5" fill="#FFFFFF" opacity="0.699999988" x="232.715569" y="2.5" width="58.6766467" height="151"></rect>
+                <rect id="9" stroke="#000000" stroke-width="5" fill="#FFFFFF" x="290.269461" y="2.5" width="58.6766467" height="151"></rect>
+                <rect id="11" stroke="#000000" stroke-width="5" fill="#FFFFFF" x="347.823353" y="2.5" width="58.6766467" height="151"></rect>
+                <rect id="1" fill="#000000" x="34.1702432" y="-7.10542736e-15" width="48.923445" height="95.5432526"></rect>
+                <rect id="3" fill="#000000" x="94.835315" y="-7.10542736e-15" width="48.923445" height="95.5432526"></rect>
+                <rect id="6" fill="#000000" x="208.316176" y="-7.10542736e-15" width="48.923445" height="95.5432526"></rect>
+                <rect id="8" fill="#000000" x="267.02431" y="-7.10542736e-15" width="48.923445" height="95.5432526"></rect>
+                <rect id="10" fill="#000000" x="326.732444" y="-7.10542736e-15" width="48.923445" height="95.5432526"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
