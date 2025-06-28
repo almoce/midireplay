@@ -108,7 +108,8 @@ export default function TimeMap() {
 	// }
 
 	useEffect(() => {
-		const ani = init()
+		// const ani = init()
+		init()
 		
 		return () => {
 			if (svgRef.current) {
